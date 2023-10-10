@@ -1,0 +1,140 @@
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background-color: #00000033;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title__icon{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.close__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #c9c9c9;
+}
+.dop__in{
+    padding: 20px;
+}
+.close__btn{
+    transition: all .3s;
+    cursor: pointer;
+}
+.close__btn:hover{
+    transform: rotate(180deg);
+}
+.in{
+    width: 45%;
+    height: max-content;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.in__icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icons{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}   
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;   
+    background-color: #b4b4b4;
+}
+.icon__chosen{  
+    background-color: #414141;
+}
+.icon > img{
+    width: 30px;
+    height: 30px;
+}
+.cart__wrap{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cart__wrap > h2{
+    font-weight: 600;
+}
+.cart__in{
+    overflow-y: scroll;
+    height: 30vh;
+    padding: 0 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.str{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff88;
+}
+.str > h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.str > p{
+    font-size: 15px;
+}
+.str__bl{
+    background-color: #bbd0fd;
+}
+.str__yel{
+    background-color: #faf3bc;
+}
+
+
+@media (max-width: 500px){
+    .in{
+        width: 85%;
+        padding: 15px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .icon > img{
+        width: 30px;
+        height: 30px;
+    }
+    .str{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .cart__in{
+        height: 40vh;
+    }
+}

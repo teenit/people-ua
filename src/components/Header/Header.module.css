@@ -1,0 +1,118 @@
+.header{
+    padding: 20px 0;
+    width: 100%;
+    background-color: #fff;
+}
+.float{
+    position: fixed;
+    z-index: 999;
+}
+.header__wrap{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__in{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+    list-style: none;
+}
+.ul li a{
+    font-weight: var(--bold-text);
+}
+.lang__wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.lang__item{
+    cursor: pointer;
+}
+.header__phone{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.lang__line{
+    width: 1.5px;
+    height: 25px;
+    background-color: var(--color-black);
+}
+.burger{
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    width: 25px;
+}
+.span{
+    height: 0.5vh;
+    width: 25px;
+    background-color: var(--color-black);
+    display: block;
+    transition: all .3s;
+}
+.b2, .b3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.b4{
+    height: 0.45vh;
+    position: absolute;
+    bottom: 0;
+}
+.burger.active .b1,.burger.active .b4{
+    opacity: 0;
+}
+.burger.active .b2{
+    transform: translateY(-50%) rotate(45deg);
+}
+.burger.active .b3{
+    transform: translateY(-50%) rotate(-45deg);
+}
+.lang__item__push{
+    font-weight: var(--bold-text);
+}
+.header__button{
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 22px;
+    text-transform: uppercase;
+    width: max-content;
+    display: block;
+    margin: auto;
+    padding: 15px 0;
+    background-color: #fcee21;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+}
+.header__button:hover{
+    transform: scale(1.05);
+}
+@media (max-width: 500px) {
+    .header__logo img{
+        width: 70%;
+    }
+    .header__in{
+        gap: 20px;
+    }
+    .b4{
+        height: 0.5vh;
+    }
+    .ul{
+        gap: 20px;
+    }
+    .ul li a{
+        font-size: 14px;
+    }
+}

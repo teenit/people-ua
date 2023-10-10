@@ -1,0 +1,22 @@
+.wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+.wrap > a > svg{
+    width: 28px;
+    height: 28px;
+}
+.wrap__none{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .wrap{
+        display: none;
+    }
+}
